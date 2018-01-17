@@ -1,0 +1,21 @@
+body {
+  background-color: cadetblue;
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: firebrick;
+}
+
+#game-title {
+    font-size: 50px;
+}
+
+#main {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 1000px;
+}
+
+#game-canvas {
+  background-color: white;
+  height: 700px;
+  width: 800px;
+}
