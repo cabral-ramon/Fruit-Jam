@@ -1,10 +1,34 @@
+
 body {
   background-color: cadetblue;
-  font-family: 'Sedgwick Ave Display', cursive;
   color: firebrick;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+header ul{
+  display: flex;
+}
+
+#portfolio-link :hover {
+  color: white;
+}
+
+.header-li {
+  padding-left: 10px
+}
+
+.header-li :hover{
+  color: white;
 }
 
 #game-title {
+  font-family: 'Sedgwick Ave Display', cursive;
     font-size: 50px;
 }
 
@@ -21,4 +45,16 @@ body {
 
 .start-image {
   display: none;
+}
+
+#game-container {
+  display: flex;
+}
+
+#score {
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 25px;
+  text-align: center;
 }

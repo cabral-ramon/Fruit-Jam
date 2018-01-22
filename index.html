@@ -14,9 +14,30 @@
     <Script type="text/javascript" src="./lib/bundle.js"></Script>
   </head>
   <body>
+    <header>
+      <p>Game created by <a id="portfolio-link" href="http://ramoncabral.com/">Ramon Cabral</a></p>
+      <ul>
+        <li class="header-li">
+          <a href="https://github.com/cabral-ramon">github</a>
+        </li>
+        <li class="header-li">
+          <a href="https://www.linkedin.com/in/cabral-ramon/">linkedin</a>
+        </li>
+      </ul>
+    </header>
     <div id="main">
       <h1 id="game-title">Fruit Jam</h1>
-      <canvas id="game-canvas" height="800px" width="800px"></canvas>
+      <div id="game-container">
+        <canvas id="game-canvas" height="800px" width="800px"></canvas>
+        <div id="menu">
+          <div id="score">
+            <h2 class="menu-title">Score</h2>
+            <p id="score-points">
+              0
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </body>
