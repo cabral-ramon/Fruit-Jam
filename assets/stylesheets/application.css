@@ -11,11 +11,14 @@ body {
 #main {
   margin: 0 auto;
   margin-top: 200px;
+  margin-top: 50px;
   width: 1000px;
 }
 
 #game-canvas {
   background-color: white;
-  height: 700px;
-  width: 800px;
+}
+
+.start-image {
+  display: none;
 }
