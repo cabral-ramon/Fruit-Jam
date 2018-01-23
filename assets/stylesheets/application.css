@@ -1,6 +1,6 @@
 
 body {
-  background-color: cadetblue;
+  background: linear-gradient(to bottom right, cadetblue, #88a238);
   color: firebrick;
   font-family: sans-serif;
 }
@@ -29,7 +29,7 @@ header ul{
 
 #game-title {
   font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 #main {
@@ -40,7 +40,8 @@ header ul{
 }
 
 #game-canvas {
-  
+  background: #02010121;
+  padding: 5%;
 }
 
 .start-image {
