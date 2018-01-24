@@ -5,9 +5,6 @@ module.exports = {
   },
   devtool: 'source-map',
   resolve: {
-    extensions: [".js"],
-    root: [
-    path.resolve('./src'),
-  ],
+    extensions: [".js"]
   }
 };
