@@ -41,7 +41,7 @@ header ul{
 
 #game-canvas {
   background: #02010121;
-  padding: 5%;
+  padding: 2%;
 }
 
 .start-image {
@@ -67,4 +67,15 @@ header ul{
 i {
   border: 1px solid crimson;
   padding: 10px;
+}
+
+.start-button-container {
+  background-color: darkseagreen;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
 }
