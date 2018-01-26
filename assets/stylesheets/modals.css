@@ -1,8 +1,9 @@
 #game-over-wrapper {
   display: none;
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 40%;
+  height: 90%;
   padding: 10px;
 }
 #game-over-modal {
