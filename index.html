@@ -19,10 +19,14 @@
       <p>Game created by <a id="portfolio-link" href="http://ramoncabral.com/">Ramon Cabral</a></p>
       <ul>
         <li class="header-li">
-          <a href="https://github.com/cabral-ramon">github</a>
+          <a href="https://github.com/cabral-ramon">
+            <i class="fa fa-github" aria-hidden="true" href="https://github.com/cabral-ramon"></i>
+          </a>
         </li>
         <li class="header-li">
-          <a href="https://www.linkedin.com/in/cabral-ramon/">linkedin</a>
+          <a href="https://www.linkedin.com/in/cabral-ramon/">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
         </li>
       </ul>
     </header>
@@ -43,7 +47,7 @@
           <div id="time" class="menu-item">
             <h2 class="menu-title">Time</h2>
             <p id="timer">
-              5
+              10
             </p>
           </div>
           <div>
@@ -53,6 +57,14 @@
               <i id="sound-btn" class="fa fa-volume-up" aria-hidden="true" ></i>
             </div>
           </div>
+        </div>
+      </div>
+      <div id="game-over-wrapper" class="modal">
+        <div id="game-over-modal">
+          <h2>Time's Up, Game Over!</h2>
+          <p>Your final score was: <span id="final-score"></span></p>
+          <p>Thank you for playing!</p>
+          <button id="play-button">Play again?</button>
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+@import url('menu.css');
+@import url('modals.css');
 
 body {
   background: linear-gradient(to bottom right, cadetblue, #88a238);
@@ -50,18 +52,6 @@ header ul{
 
 #game-container {
   display: flex;
-}
-
-.menu-item {
-  font-size: 45px;
-  font-family: sans-serif;
-  font-weight: 500;
-  padding: 25px;
-  text-align: center;
-}
-
-#volume-btn {
-  font-size: 70px;
 }
 
 i {
