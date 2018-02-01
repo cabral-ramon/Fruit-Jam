@@ -8,9 +8,9 @@ body {
 }
 
 header {
-  display: flex;
-  margin-top: 10px;
-  margin-left: 10px;
+  float: right;
+  margin-right: 20%;
+  font-size: 20px;
 }
 
 header ul{

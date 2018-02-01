@@ -12,6 +12,7 @@
     <script type='text/javascript' src='https://code.createjs.com/easeljs-0.8.2.min.js'></script>
     <script type='text/javascript' src='https://code.createjs.com/tweenjs-0.6.2.min.js'></script>
     <script type='text/javascript' src='https://code.createjs.com/preloadjs-0.6.2.min.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <Script type="text/javascript" src="./lib/bundle.js"></Script>
   </head>
   <body>
@@ -32,11 +33,27 @@
     </header>
     <div id="main">
       <h1 id="game-title">Fruit Jam</h1>
+      <div id="start-game-wrapper" class="modal-wrapper">
+        <div id="start-game-modal" class="modal">
+          <p>
+            Fruit-Jam is a match-3 game similar to bejeweled.
+          </p>
+          <br />
+          <p>
+            First click on a fruit and then click on any other fruit adjacent to the fruit to swap them.
+          </p>
+          <br  />
+          <p>
+            Match three of the same fruits either vertically or horizontally. Your goal is to find as many matches as you can in the given time.
+          </p>
+          <br  />
+          </p> Good Luck!</p>
+          <br  />
+          <button id="start-button" class="button">Play</button>
+        </div>
+      </div>
       <div id="game-container">
-        <canvas id="game-canvas" height="600px" width="600px"></canvas>
-        <!-- <div class="start-button-container">
-          <button id="start-button">Start Game</button>
-        </div> -->
+        <canvas id="game-canvas" height="500px" width="500px"></canvas>
         <div id="menu">
           <div id="score" class="menu-item">
             <h2 class="menu-title">Score</h2>
@@ -59,12 +76,12 @@
           </div>
         </div>
       </div>
-      <div id="game-over-wrapper" class="modal">
-        <div id="game-over-modal">
+      <div id="game-over-wrapper" class="modal-wrapper">
+        <div id="game-over-modal" class="modal">
           <h2>Time's Up, Game Over!</h2>
           <p>Your final score was: <span id="final-score"></span></p>
           <p>Thank you for playing!</p>
-          <button id="play-button">Play again?</button>
+          <button id="play-button" class="button">Play again?</button>
         </div>
       </div>
     </div>

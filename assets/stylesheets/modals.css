@@ -1,24 +1,39 @@
-#game-over-wrapper {
+.modal-wrapper {
   display: none;
   position: absolute;
-  top: 40%;
-  width: 40%;
+  top: 30%;
+  width: 35%;
   height: 90%;
   padding: 10px;
 }
-#game-over-modal {
+.modal {
   color: crimson;
   animation-name: fadeIn;
-  background-color: darkseagreen;
+  background-color: burlywood;
   text-align: center;
   font-weight: 600;
   border: 1px white solid;
   border-radius: 30px;
   z-index: 10;
   opacity: .95;
+  padding: 50px;
+  text-align: center;
 }
 
-@@keyframes fadeIn {
+.button {
+  background-color: crimson;
+  color: white;
+  font-size: 25px;
+  padding: 5px 10px 5px 10px;
+  border: 1px crimson solid;
+  border-radius: 5px;
+}
+
+#start-game-wrapper {
+  display: block;
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
