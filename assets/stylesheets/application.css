@@ -5,6 +5,7 @@ body {
   background: linear-gradient(to bottom right, cadetblue, #88a238);
   color: firebrick;
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 header {
@@ -58,6 +59,9 @@ i {
   padding: 10px;
 }
 
+i:hover {
+  cursor: pointer;
+}
 .start-button-container {
   background-color: darkseagreen;
   padding: 20px;
