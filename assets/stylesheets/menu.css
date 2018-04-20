@@ -9,3 +9,7 @@
 #volume-btn {
   font-size: 70px;
 }
+
+#mute-btn {
+  display: none;
+}
