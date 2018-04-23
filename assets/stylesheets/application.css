@@ -6,6 +6,7 @@ body {
   color: firebrick;
   font-family: sans-serif;
   line-height: 1.5;
+  height: 1300px;
 }
 
 header {
@@ -53,6 +54,7 @@ header ul{
 
 #game-container {
   display: flex;
+  height: 600px;
 }
 
 i {
