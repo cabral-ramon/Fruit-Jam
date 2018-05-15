@@ -6,7 +6,7 @@ body {
   color: firebrick;
   font-family: sans-serif;
   line-height: 1.5;
-  height: 1300px;
+  min-height: 100%;
 }
 
 header {
@@ -79,4 +79,8 @@ i:hover {
   font-size: 60px;
   font-weight: 700;
   color: white;
+}
+
+audio {
+  height: 0px;
 }
