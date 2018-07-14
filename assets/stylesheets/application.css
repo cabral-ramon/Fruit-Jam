@@ -15,7 +15,7 @@ header {
   font-size: 20px;
 }
 
-header ul{
+header ul {
   display: flex;
 }
 
@@ -24,16 +24,16 @@ header ul{
 }
 
 .header-li {
-  padding-left: 10px
+  padding-left: 10px;
 }
 
-.header-li :hover{
+.header-li :hover {
   color: white;
 }
 
 #game-title {
   font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 80px;
+  font-size: 80px;
 }
 
 #main {
@@ -75,7 +75,7 @@ i:hover {
   font-weight: 700;
 }
 
-.count-down{
+.count-down {
   font-size: 60px;
   font-weight: 700;
   color: white;

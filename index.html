@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Fruit Jam</title>
-    <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
-    <Link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-    <Link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css"/>
-    <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
 
-    <script type='text/javascript' src='https://code.createjs.com/easeljs-0.8.2.min.js'></script>
-    <script type='text/javascript' src='https://code.createjs.com/tweenjs-0.6.2.min.js'></script>
-    <script type='text/javascript' src='https://code.createjs.com/preloadjs-0.6.2.min.js'></script>
-    <Script type="text/javascript" src="./dist/lib/bundle.js"></Script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Fruit Jam</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+  <Link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css" />
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <!-- Bootstrap CDN END -->
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <Link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css" />
+  <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
+
+
+  <script type='text/javascript' src='https://code.createjs.com/easeljs-0.8.2.min.js'></script>
+  <script type='text/javascript' src='https://code.createjs.com/tweenjs-0.6.2.min.js'></script>
+  <script type='text/javascript' src='https://code.createjs.com/preloadjs-0.6.2.min.js'></script>
+  <Script type="text/javascript" src="./dist/lib/bundle.js"></Script>
+</head>
+
+<body>
+  <div class="container">
     <header>
-      <p>Game created by <a id="portfolio-link" href="http://ramoncabral.com/">Ramon Cabral</a></p>
+      <!-- <p>Game created by <a id="portfolio-link" href="http://ramoncabral.com/">Ramon Cabral</a></p>
       <ul>
         <li class="header-li">
           <a href="https://github.com/cabral-ramon">
@@ -29,12 +36,37 @@
             <i class="fa fa-linkedin" aria-hidden="true"></i>
           </a>
         </li>
-      </ul>
+      </ul> -->
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <div class="row">
+        <div class="col-xs-6" style="align-self: center;">
+          <p class="display-5">Game created by <a class="btn btn-link">Ramon Cabral</a></p>
+        </div>
+        <div class="col-xs-4">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="https://github.com/cabral-ramon">
+                <i class="fa fa-github" style="font-size: 40px;" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/cabral-ramon/">
+                <i class="fa fa-linkedin" style="font-size: 40px;" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div id="main">
-      <h1 id="game-title">Fruit Jam</h1>
-      <div id="start-game-wrapper" class="modal-wrapper">
-        <div id="start-game-modal" class="modal">
+      <h1 id="game-title" class="display-1">Fruit Jam</h1>
+
+      <div id="start-game-wrapper" class="myModal-wrapper">
+        <div id="start-game-modal" class="myModal">
           <p>
             Fruit-Jam is a match-3 game similar to bejeweled.
           </p>
@@ -42,13 +74,13 @@
           <p>
             First click on a fruit and then click on any other adjacent fruit to swap them.
           </p>
-          <br  />
+          <br />
           <p>
             Match three of the same fruits either vertically or horizontally.
           </p>
-          <br  />
+          <br />
           </p> Good Luck!</p>
-          <br  />
+          <br />
           <button id="start-button" class="button">Play</button>
         </div>
       </div>
@@ -70,8 +102,8 @@
           <div>
             <div class="menu-item">
               <h2 class="menu-title">Sound</h2>
-              <i id="mute-btn" class="fa fa-volume-off" aria-hidden="true" ></i>
-              <i id="sound-btn" class="fa fa-volume-up" aria-hidden="true" ></i>
+              <i id="mute-btn" class="fa fa-volume-off" aria-hidden="true"></i>
+              <i id="sound-btn" class="fa fa-volume-up" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -88,7 +120,16 @@
         </div>
       </div>
     </div>
-    <footer id="footer">
-    </footer>
-  </body>
+
+  </div>
+  <footer id="footer">
+  </footer>
+
+  <!-- BOOTSTRAP / JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP / JQUERY END-->
+</body>
+
 </html>
